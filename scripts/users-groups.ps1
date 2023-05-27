@@ -4,7 +4,7 @@
 New-ADOrganizationalUnit -Name "Toronto" -Path "dc=mcook,dc=local" -DisplayName "Toronto Office"
 
 # Creating a new security group
-New-ADGroup -Name "CybersecurityOperators" -GroupCategory Security -GroupScope Global -Path "ou=IT,dc=mcook,dc=local" -DisplayName
+New-ADGroup -Name "CybersecurityOperators" -GroupCategory Security -GroupScope Global -Path "ou=IT,dc=mcook,dc=local" -DisplayName "Cybersecurity Operators"
 
 # Add a user to a group using Distinguished Name
 Add-ADGroupMember -Identity "CybersecurityOperators" -Members
